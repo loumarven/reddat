@@ -1,24 +1,3 @@
-# README
+Repository for the example app of Thoughtbot's Rails Testing book.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+My goal in going through this book is to learn testing in Rails and the tools/frameworks used to do test-driven development.
