@@ -1,9 +1,12 @@
 <%= form_for @link do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= render "error_messages", target: @link %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
 
-  <%= f.label :url %>
-  <%= f.text_field :url %>
+    <%= f.label :url %>
+    <%= f.text_field :url %>
 
-  <%= f.submit "Submit!" %>
+    <%= f.submit "Submit!" %>
+  </div>
 <% end %>
