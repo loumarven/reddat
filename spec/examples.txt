@@ -1,5 +1,8 @@
 example_id                                         | status | run_time        |
 -------------------------------------------------- | ------ | --------------- |
-./spec/features/user_submits_a_link_spec.rb[1:1]   | passed | 0.20762 seconds |
-./spec/features/user_submits_a_link_spec.rb[1:2:1] | passed | 0.0711 seconds  |
-./spec/features/user_views_homepage_spec.rb[1:1]   | passed | 0.02458 seconds |
+./spec/features/user_submits_a_link_spec.rb[1:1]   | passed | 0.1021 seconds  |
+./spec/features/user_submits_a_link_spec.rb[1:2:1] | passed | 0.04321 seconds |
+./spec/features/user_upvotes_a_link_spec.rb[1:1]   | passed | 0.2737 seconds  |
+./spec/features/user_views_homepage_spec.rb[1:1]   | passed | 0.0332 seconds  |
+./spec/models/link_spec.rb[1:1]                    | passed | 0.00403 seconds |
+./spec/models/link_spec.rb[2:1]                    | passed | 0.00082 seconds |

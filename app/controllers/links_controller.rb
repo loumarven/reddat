@@ -20,6 +20,13 @@ class LinksController < ApplicationController
     @link = Link.find(params[:id])
   end
 
+  def upvote
+    @link = Link.find(params[:id])
+    @link.votes += 1
+    @link.reload.votes
+    redirect_to @links
+  end
+
   private
 
   def link_params
