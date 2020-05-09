@@ -35,3 +35,19 @@ RSpec.describe Link, ".hottest_first" do
     expect(Link.hottest_first).to eq [hottest_link, lukewarm_link, coldest_link]
   end
 end
+
+RSpec.describe Link, "#image?" do
+  %w(.jpg .jpeg .png .gif).each do |extension|
+    it "returns true if the URL ends in #{extension}" do
+      link = Link.new(url: "http://example.com/a#{extension}")
+
+      expect(link.image?).to be_truthy
+    end
+  end
+
+  it "returns false if the URL does not have an image extension" do
+    link = Link.new(url: "http://example.com/not-an-image")
+
+    expect(link.image?).to be_falsey
+  end
+end

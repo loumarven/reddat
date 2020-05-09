@@ -1,7 +1,7 @@
-<%= content_tag :li, id: "link_#{link.id}" do %>
-  <%= link_to "Upvote", [link, :upvote], method: :post %>
-  <div data-role="score"><%= link.score %></dvi>
-  <%= link_to "Downvote", [link, :downvote], method: :post %>
+<%= link_to link.url do %>
+  <%= link.title %>
 
-  <%= link_to link.title, link.url %>
+  <% if link.image? %>
+    <%= image_tag link.url %>
+  <% end %>
 <% end %>
